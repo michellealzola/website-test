@@ -1,0 +1,130 @@
+body {
+    font-family: 'Raleway', sans-serif;       
+    margin: 0;
+    padding: 0; 
+    background-image: url("../images/PATTERNlandscaping-03.png");
+    background-repeat: repeat;
+    background-attachment: fixed;  
+    color: rgb(18, 24, 14);       
+}
+
+div.container{
+    background-color: rgb(254, 255, 250);
+    margin: 20%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    padding: 2%;    
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px rgb(18, 24, 14); 
+    text-align: center; 
+    padding: 0;  
+    
+}
+div.container header {
+    width: 100%;
+    padding-left: 0;
+    text-align: center; 
+    margin: 0;    
+    margin-top: 0;
+    padding-top: 3%;       
+    background-color: rgb(207, 232, 203);
+    border-radius: 25px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+div.container header img {
+    padding: 0;
+    margin-bottom: 0;       
+}
+div.container header h1 {
+    font-size: 600%;
+    color:rgb(17, 65, 61);    
+    font-family: 'Comforter', cursive;
+    margin-top: 0;
+    padding-bottom: 0%;
+    margin-bottom: 1%;
+}
+div.container header p{
+    margin-top: 0;
+    padding: 0;
+    padding-bottom: 1%;
+    font-size: 120%;
+}
+div.container main { 
+    width: auto;
+    margin: 5%; 
+    margin-top: 3%;
+    padding: 0;   
+    padding-bottom: 5%;
+    text-align: left;
+}
+div.container main div #order_information {
+    padding: 0;
+    margin: auto; 
+    padding-bottom: 5%;
+    height: 600px;
+}
+#order_information div {
+    margin-top: 3%;
+}
+#order_information h2 {
+    margin: 0;
+    margin-bottom: 3%;
+    font-size: 200%;
+    text-align: left;
+}
+#order_information h3 {
+    font-size: 150%;
+    font-weight: normal;
+}
+#order_information label {
+    font-size: 150%;    
+}
+#order_information input.textfield {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border-color: none;
+    border-width: 1px;
+    font-size: 150%;
+    background-color:rgb(226, 240, 225);
+    border-color: rgb(18, 24, 14);
+    margin-top: 1%;
+    font-family: 'Raleway', sans-serif;
+    text-indent: 1%;
+}
+button {
+    height: 50px;
+    width: 25%;
+    font-size: 150%;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(144, 181, 199);
+    border-radius: 10px;
+    color: rgb(254, 255, 250);
+}
+button:hover {
+    background-color: rgb(207, 232, 203);
+}
+.btn {
+    height: 40px;
+    width: 15%;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(120, 165, 160);
+    border-radius: 10px;
+    color: rgb(254, 255, 250);
+}
+ul {
+    margin-bottom: 5%;
+}
+li {
+    font-size: 150%;
+}
+
+section {
+    visibility: hidden;
+}
+#invoice {
+    font-size: 150%;
+}

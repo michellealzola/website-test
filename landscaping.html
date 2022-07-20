@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Elle's Landscaping</title>
+        <meta name = "author" content="Michelle Alzola">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">     
+        <link rel="stylesheet" type = "text/css" href="./styles/landscapingstyles.css">  
+
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="./images/LOGOlandscaping-02.png" alt="Elle's Landscaping Logo" width="150">
+                <h1>Elle's Landscaping</h1> 
+                <p>Contact Us: 123-456-7890</p>               
+            </header>
+            <main>                
+                <div id="order_information">
+                    <h2>Order Form</h2>
+                    <div>
+                        <label>Full Name</label>
+                        <input class="textfield" id="full_name" type="text" name="full_name" autofocus required>
+                    </div>
+                    <div>
+                        <label>Address</label>
+                        <input class="textfield" id="c_address" type="text" name="c_address" required>
+                    </div>
+                    <div>
+                        <label>Postal Code</label>
+                        <input class="textfield" id="c_postal" type="text" name="c_postal" required>
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <input class="textfield" id="c_phone" type="tel" name="c_phone" required>
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input class="textfield" id="c_email" type="email" name="c_email" required>
+                    </div>
+                    <div>
+                        <h2>Choose Planter Shapes</h2>
+
+                        <div>
+                            <input id="cubesChecked" type="checkbox" onclick="cubeSelect();" name="planter[]">
+                            <label for="cubesChecked">Square/Rectangular Cubes: 0.001 cents per cu. cm</label>
+                            <section id="cubesSection">
+                                <label>Square or Rectangular Cubes  </label>
+                                <button class="btn" onclick="cubesAjax();">Set Dimensions</button>
+                                <div id="purchasecubes"></div>                        
+                                <br>
+                            </section>
+                        </div>
+                        <div>
+                            <input id="cylindersChecked" type="checkbox" onclick="cylindersSelect();" name="planter[]">
+                            <label for="cylindersChecked">Flat bottomed cylinders: 0.0012 cents per cu. cm</label>
+                            <section id="cylindersSection">
+                                <label>Flat Bottomed Cylinders  </label>
+                                <button class="btn" onclick="cylinderAjax();">Set Dimensions</button>
+                                <div id="purchasecylinders"></div>                        
+                                <br>
+                            </section>
+
+                        </div>
+                        <div>
+                            <input id="sphericalChecked" type="checkbox" onclick="sphericalSelect();" name="planter[]">
+                            <label for="sphericalChecked"> ½ Spherical: 0.0015 cents per cu. cm</label>
+                            <section id="sphericalSection">
+                                <label>1/2 Spherical  </label>
+                                <button class="btn" onclick="sphericalAjax();">Set Dimensions</button>
+                                <div id="purchasespherical"></div>                        
+                                <br>
+                            </section>
+                        </div>
+                        <div>
+                            <input id="coneChecked" type="checkbox" onclick="coneSelect();" name="planter[]">
+                            <label for="coneChecked">Truncated cone: 0.002 cents per cu. cm</label>
+                            <section id="coneSection">
+                                    <label>Truncated Cone  </label>
+                                    <button class="btn" onclick="coneAjax();">Set Dimensions</button>
+                                    <div id="purchasecone"></div> 
+                            </section>
+
+                        </div>
+                    </div>
+                    <div>
+                        <button class = "submitbutton" onclick="submitOrder();" >Submit Order</button>
+                    </div>
+
+                    <div id="invoice">
+
+                    </div>
+                    
+                </div>
+                
+                
+            </main>
+            <script type="text/javascript" src="./scripts/landscapingscripts.js"></script>
+
+        </div>
+        
+    </body>
+</html>
